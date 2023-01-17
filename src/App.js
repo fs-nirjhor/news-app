@@ -8,7 +8,7 @@ function App() {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     fetch(
-      "https://gnews.io/api/v4/top-headlines?token=765ac2e88fa5ad490de1a20fbb046e96&topic=breaking-news"
+      "https://gnews.io/api/v4/top-headlines?token=765ac2e88fa5ad490de1a20fbb046e96&topic=breaking-news&lang=en"
     )
       .then((res) => res.json())
       .then((data) => setArticles(data.articles));
