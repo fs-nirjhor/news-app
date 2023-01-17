@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
     <Heading headingArticles={articles}></Heading>
-    <h3>Top News: {articles.length}</h3>
+    <h3>Top News</h3>
      <Row xs={1} md={2} className="g-4">
     { 
     articles.map((article,index) => <News article={article} key={index}></News>)
